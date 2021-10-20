@@ -1,0 +1,2 @@
+touch {1..20}
+ls -l | awk '{print $9}' | awk '/[02468]$/ {print}' | xargs rm
